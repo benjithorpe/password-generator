@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-        <header>
-            <h1>Password Generator</h1>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, veniam.</p> -->
-        </header>
 
-        <div>
-            <!-- <input type="range"> -->
-            <textarea id="password"></textarea>
-            <button>Generate</button>
-        </div> 
-    </main>
-    <script src="main.js"></script>
+<body>
+  <main>
+    <h1>Simple Password Generator</h1>
+
+    <form>
+      <div>
+        <p class="rangeValue">6</p>
+        <input type="range" min="4" max="256" value="6">
+      </div>
+
+      <textarea disabled class="output"></textarea>
+
+      <div class="buttons">
+        <button type="button">Generate</button>
+        <button class="copy" type="button">Copy</button>
+      </div>
+    </form>
+  </main>
+  <script src="main.js"></script>
 </body>
 </html>
