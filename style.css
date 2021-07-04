@@ -3,10 +3,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 html{ font-size: 62.5%; }
 body{ font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif; }
-
 h1{
 	font-size: 2.5rem;
 	line-height: 1.4;
@@ -14,23 +12,19 @@ h1{
 	text-align: center;
 	color: #555;
 }
-
 p.rangeValue{
 	text-align: center;
 	font-size: 2rem;
 }
-
 main{
 	width: 90%;
 	margin: auto;
 }
-
 main div:first-child{
 	margin-bottom: 1.5em;
 	display: flex;
 	flex-direction: column;
 }
-
 textarea.output{
 	margin: 0.5em 0;
 	padding: 0.5em;
@@ -41,7 +35,6 @@ textarea.output{
 	resize: vertical;
 	overflow: hidden;
 }
-
 .buttons{
 	display: flex;
 	flex-direction: row;
@@ -49,7 +42,6 @@ textarea.output{
 	align-items: center;
 	gap: 5em;
 }
-
 button{
 	padding: .5em 1em;
 	background-color: #142a6d;
@@ -58,8 +50,8 @@ button{
 	font-size: 2rem;
 	font-weight: bolder;
 	border-radius: 3px;
+	cursor: pointer;
 }
-
 button.copy{
 	font-size: 1.5rem;
 	background-color: #ddd;
@@ -77,6 +69,7 @@ button.copy{
 
 @media screen and (min-width: 768px){
 	main{ width: 60%; }
+	button:hover{ background-color: #1f3e99; }
 }
 
 @media screen and (min-width: 992px){
